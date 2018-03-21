@@ -2,11 +2,11 @@ require 'quota'
 
 box.cfg {
     log_level = 5,
-    listen = '0.0.0.0:3301',
-    slab_alloc_arena = 1.5,
-    wal_dir    = "/var/lib/tarantool",
-    snap_dir   = "/var/lib/tarantool",
-    vinyl_dir = "/var/lib/tarantool"
+    listen = '127.0.0.1:3301',
+    slab_alloc_arena = 1.5
+--    wal_dir    = "/var/lib/tarantool",
+--    snap_dir   = "/var/lib/tarantool",
+--    vinyl_dir = "/var/lib/tarantool"
 }
 
 box.once('bootstrap', function()
